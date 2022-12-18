@@ -366,7 +366,7 @@ const gameBoard = [
 
   sendAsnwer.onclick = checkReponsFun
 
-  window.onkeypress = checkReponsFun
+ 
 
   
 
