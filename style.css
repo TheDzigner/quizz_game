@@ -1,0 +1,366 @@
+*
+
+{
+
+  margin :0;
+
+  padding :0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 15pt;
+
+    width:min(100%,480px);
+
+    min-height :100vh;
+
+    transition : all .2s ease-in-out ;
+
+}
+
+header
+
+{
+
+ width:min(100%,480px);
+
+ display :flex ;
+
+ justify-content :space-around ;
+
+ align-items :center ;
+
+ padding :10px ;
+
+}
+
+header  .timer__
+
+{
+
+  font-size :.8em;
+
+   font-family: 'Varela Round', sans-serif;
+
+}
+
+header  .score__
+
+{
+
+ font-size :.8em;
+
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.container 
+
+{
+
+ width:min(90%,480px);
+
+ display: flex ;
+
+ justify-content :center ;
+
+ align-items :flex-start ;
+
+ flex-direction :column ;
+
+ border :1px solid rgba(3,3,3,.7) ;
+
+ margin:30% auto 0 ;
+
+ padding :10px ;
+
+ background : #FFFFFF ;
+
+ box-shadow :0 0 7px rgba(3,3,3,.4);
+
+}
+
+.question_container
+
+{
+
+  width: 100%;
+
+  height :auto ;
+
+}
+
+.question_container  h3
+
+{
+
+ padding: 5px ;
+
+ text-transform :capitalize ;
+
+ font-family: 'Varela Round', sans-serif;
+
+}
+
+.question_container  p
+
+{
+
+  padding :5px ;
+
+  font-size :.8em;
+
+  font-weight :400 ;
+
+  text-decoration :underline ;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.input_container 
+
+{
+
+  width: 100%;
+
+  display :flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  position :relative ;
+
+}
+
+.input_container span
+
+{
+
+  position :absolute ;
+
+  bottom:-13px;
+
+  left: 0 ;
+
+  font-size :.4em;
+
+  padding :5px ;
+
+  font-weight :700 ;
+
+  letter-spacing :3px ;
+
+  opacity :0;
+
+}
+
+.input_container  span.correct 
+
+{
+
+  color: green;
+
+  transition:color .2s ease-in-out ;
+
+  opacity :1;
+
+}
+
+.input_container  span.incorrect 
+
+{
+
+  color:red;
+
+  transition:color .2s ease-in-out ;
+
+  opacity :1;
+
+}
+
+.input_container  input 
+
+{
+
+  display: inline-block ;
+
+  padding :10px ;
+
+  flex-grow: 1;
+
+  outline: none ;
+
+  font-weight :700;
+
+  font-family: 'Varela Round', sans-serif;
+
+  text-transform :capitalize ;
+
+  border :1px solid #E9ECF4 ;
+
+  box-shadow :0 0 7px inset rgba(3,3,3,.3);
+
+}
+
+.input_container  input.invalid 
+
+{
+
+  border: 1px solid red ;
+
+  transition : border .2s ease-in-out ;
+
+}
+
+.input_container  input.valid 
+
+{
+
+  border: 1px solid green ;
+
+  transition : border .2s ease-in-out ;
+
+}
+
+.input_container  button 
+
+{
+
+  flex-grow: 1;
+
+  display :inline-block ;
+
+  padding :10px ;
+
+  outline :none ;
+
+  border :1px solid #F1F1F1;
+
+ border-top-right-radius: 4px;
+
+ background : #A570C4;
+
+ color : #FFFFFF ;
+
+ font-size :1em ;
+
+ border-bottom-right-radius: 4px;
+
+ font-family: 'Varela Round', sans-serif;
+
+}
+
+.input_container button.disabled
+
+{
+
+  pointer-events: none ;
+
+  background : #575B61;
+
+  opacity :.5;
+
+}
+
+.btns 
+
+{
+
+  width:min(70%,480px);
+
+  display:flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  margin: 40% auto 0 ;
+
+}
+
+.btns button 
+
+{
+
+  padding :10px 20px ;
+
+  outline :none ;
+
+  margin :5px ;
+
+  font-size :.9em;
+
+  font-weight :400 ;
+
+}
+
+.btns .start
+
+{
+
+  background :#A570C4;
+
+  color :#FFFFFF ;
+
+  border :1px solid #FFFFFF;
+
+  box-shadow :0 0 7px rgba(3,3,3,.4);
+
+}
+
+.btns  .start.disabled 
+
+{
+
+  background : #575B61;
+
+  color :#FFFFFF ;
+
+  opacity :.5;
+
+  pointer-events :none ;
+
+}
+
+.btns .play_again 
+
+{
+
+  background : #575B61;
+
+  color :#FFFFFF ;
+
+  opacity :.5;
+
+  pointer-events: none ;
+
+}
+
+.btns .play_again.enable
+
+{
+
+  background :#A570C4;
+
+  color :#FFFFFF ;
+
+  border :1px solid #FFFFFF;
+
+  box-shadow :0 0 7px rgba(3,3,3,.4);
+
+  pointer-events: auto;
+
+    opacity :1;
+
+}
+
